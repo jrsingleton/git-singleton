@@ -7,6 +7,5 @@ jobs:
     - name: Check out source code
       uses: actions/checkout@v1
 
-
     - name: Run Example
       run: NODE_TLS_REJECT_UNAUTHORIZED=0 node device-example.js
