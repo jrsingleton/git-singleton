@@ -6,6 +6,7 @@ jobs:
     steps:
     - name: Check out source code
       uses: actions/checkout@v1
-
+    - name: Install Corellium Api
+      run: npm install @corellium/corellium-api
     - name: Run Example
       run: NODE_TLS_REJECT_UNAUTHORIZED=0 node device-example.js
